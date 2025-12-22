@@ -1,104 +1,154 @@
-<br />
-<div align="center">
-<a href="[https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)">
-<img src="[https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-bee-farm-flaticons-lineal-color-flat-icons-2.png](https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/external-bee-farm-flaticons-lineal-color-flat-icons-2.png)" alt="Logo" width="80" height="80">
-</a>
-<h1 align="center">DorsataSentry</h1>
-<p align="center">
-<b>AI-Driven Optical Detection & Ethological Monitoring for <i>Apis dorsata</i></b>
-<br />
-<a href="#demo">View Demo</a>
-·
-<a href="#proposed-solution-dorsatasentry">Explore Solution</a>
-·
-<a href="#references">Read Research</a>
-</p>
-</div>
 <div align="center">
 
-!(https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
-!(https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
-</div>
-📋 Table of Contents
-1.(#1-executive-summary)
-2.(#2-overview-of-bees-and-rock-bees)
-3.(#3-need-for-colony-monitoring)
-4.(#4-research-topics)
--(#32-rock-bee-habitat--colony-patterns)
--(#34-existing-detection-methods--limitations)
-5.(#5-proposed-solution-dorsatasentry)
--(#module-1-the-hive-scouter-optical-detection)
-- Module 2: Migratory Map
--(#module-3-the-biosense-ethological-safety-analysis)
-6.(#project-structure)
-7.(#6-references)
-1. Executive Summary
-DorsataSentry is a mobile-first application designed to solve the human-wildlife conflict between urban residents and the Giant Rock Bee (Apis dorsata). Unlike standard beekeeping apps that manage wooden boxes, this solution uses Computer Vision and Sensor Fusion to detect wild, open-nesting colonies on high-rise buildings.
-> Core Innovation: We treat the smartphone as a "Remote Biosensor," detecting the unique visual "shimmering" waves and acoustic "hissing" signals of Rock Bees to warn users of aggression before a sting occurs.
-> 
-2. Overview of Bees and Rock Bees
-🌏 The Ecological Context
-India is home to a diverse range of honey bee species. While Apis cerana and Apis mellifera are domesticated in boxes, the Giant Rock Bee (Apis dorsata) remains wild. It is a keystone pollinator, essential for India's agricultural economy, yet it cannot be kept in artificial hives.
-🏙️ The Urban "Rock Bee" (Apis dorsata)
-Apis dorsata has adapted remarkably to urbanization. In cities like Bangalore, Hyderabad, and Nagpur, they treat high-rise buildings, water tanks, and metro viaducts as "urban cliffs".
- * Behavior: They are migratory, highly defensive, and exhibit philopatry (they return to the exact same nesting site year after year).
- * Defense: They display a unique collective defense behavior called "Shimmering" (a visual wave of flipping abdomens) and produce a distinct "Hissing" sound when threatened.
-3. Need for Colony Monitoring
-The conflict is driven by a lack of visibility. Currently, a colony is often only "detected" when it attacks, leading to panic and the destruction of the hive (and the pollinators).
-| Key Driver | Description |
-|---|---|
-| 🛡️ Public Safety | To warn residents of agitated colonies before a stinging incident occurs. |
-| 🌿 Conservation | To prevent preemptive destruction by identifying safe, dormant, or calm colonies. |
-| 📍 Migration Tracking | To predict when swarms will return to specific buildings, enabling proactive management. |
-4. Research Topics
-4.1 Types of Bees in India
- * 🐝 Apis dorsata (Rock Bee): The largest, most aggressive, and migratory. Open-nesting.
- * 🐝 Apis cerana (Indian Hive Bee): Cavity-nesting, domesticable.
- * 🐝 Apis florea (Little Bee): Small, open-nesting in bushes.
- * 🐝 Apis mellifera (European Bee): Imported for commercial beekeeping.
-4.2 Rock Bee Habitat & Colony Patterns
- * The "Urban Cliff" Hypothesis: Apis dorsata prefers structures that mimic natural cliffs. Research in Nagpur found 60.8% of nests on buildings, compared to only 5.4% on trees.
- * Nesting Fidelity: Colonies leave white wax traces ("scars") on buildings when they migrate. Swarms use olfactory cues to return to these specific scars seasonally.
- * Orientation: Nests are often oriented East-West to manage thermoregulation on exposed buildings.
-4.3 Existing Detection Methods & Limitations
-| Technology | Method | Limitation for Apis dorsata |
-|---|---|---|
-| Manual Inspection | Visual check by pest control | Slow, reactive, and dangerous for the inspector. |
-| IoT Sensors | Temp/Humidity sensors | Requires installation inside a box. Impossible for open-nesting wild bees. |
-| Citizen Science Apps | iNaturalist / Epicollect | Good for photos, but lacks real-time safety analysis or agitation warnings. |
-| LIDAR/Radar | Laser detection | Effective but prohibitively expensive for widespread urban use. |
-5. Proposed Solution: "DorsataSentry"
-DorsataSentry is a software-only solution that repurposes smartphone sensors to detect, map, and monitor Rock Bee colonies without physical contact.
-🔭 Module 1: The "Hive Scouter" (Optical Detection)
- * Technology: On-device Computer Vision (YOLOv8 optimized for TensorFlow Lite).
- * Function: The user points the camera at a distant building. The AI detects the specific visual signature of the Apis dorsata curtain (large, semi-circular, dark mass).
- * Innovation: It distinguishes Rock Bees from wasp nests or AC units, validating the data source.
-🗺️ Module 2: The "Migratory Map" (Location Monitoring)
- * Technology: Geolocation (GPS) + Time-Lapse Crowdsourcing.
- * Function:
-   * Logs the precise coordinates and altitude (floor level) of hives.
-   * Tracks the status: "Active" (Live Bees) vs. "Dormant" (Wax Scar).
-   * Predictive Alert: Uses historical data of "Dormant" sites to warn residents when the migration season begins: "Bees are likely to return to your balcony this week.".
-📡 Module 3: The "BioSense" (Ethological Safety Analysis)
- * Technology: Optical Flow (Farneback Algorithm) & Spectral Audio Analysis.
- * Visual Safety: Detects "Shimmering"—the rhythmic defense waves bees display before attacking. If the app sees pixel movement at 0.3–0.5 m/s (wave velocity), it triggers a Red Alert.
- * Audio Safety: Detects "Hissing", identifying the specific frequency spike (400Hz – 6kHz) associated with colony aggression, filtering out traffic noise.
-📂 Project Structure
-DorsataSentry/
-├── docs/
-│   ├── research.pdf          # Detailed Research Report
-│   └── reference-links.txt   # List of sources
-├── assets/
-│   └── images/               # Infographics and Diagrams
-├── README.md                 # This file
-└── LICENSE
+![DorsataSentry Banner](C:/Users/Darshankumar/.gemini/antigravity/brain/f391df9d-0188-4eb1-b3b7-78969c3ca43c/dorsata_sentry_banner_1766392720848.png)
 
-6. References
- * Wardhe, D.S. & Ghonmode, S.V. (2024). Nesting pattern of Apis dorsata F. in urban Nagpur. Entomon, 49(4): 539-544. (Evidence for urban nesting preferences on buildings).
- * Kastberger, G., et al. (2014). Speeding up social waves: Propagation mechanisms of shimmering in giant honeybees. PLOS ONE. (Scientific basis for visual defense detection). 
- * Wehmann, H., et al. (2015). The Sound and the Fury—Bees Hiss when Expecting Danger. PLOS ONE. (Scientific basis for acoustic monitoring). 
- * Oldroyd, B.P., et al. (2000). Colony aggregation and seasonal migration in Apis dorsata. (Evidence for philopatry and returning to the same sites). 
- * Vijayan, S., et al. (2022). Defensive shimmering responses in Apis dorsata are triggered by dark stimuli. Journal of Experimental Biology. (Visual triggers for aggression). 
+# 🐝 DorsataSentry
+
+### *AI-Driven Urban Coexistence with the Giant Rock Bee* 🏙️
+
+**"From Reactive Destruction to Proactive Coexistence."**
+
+> *A Mobile-First "Software-as-a-Sensor" Platform for Optical Colony Detection, Geo-Spatial Monitoring & Ethological Safety.*
+
+[![Made with Flutter](https://img.shields.io/badge/Made%20with-Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/)
+[![TensorFlow Lite](https://img.shields.io/badge/TF%20Lite-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/lite)
+[![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org/)
+[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/)
+
+---
+
+</div>
+
+## 1. 🌏 Overview: Bees & The Urban Rock Bee
+
+India’s apiculture landscape is diverse, but one species dominates the urban skyline. Unlike the docile European honeybee (*Apis mellifera*) which hides in boxes, the **Giant Rock Bee (*Apis dorsata*)** is a wild, open-nesting species that cannot be domesticated.
+
+### 🏙️ The "Urban Cliff" Phenomenon
+*Apis dorsata* naturally nests on high cliffs. In modern cities, they mistake **high-rise apartments, water tanks, and balconies** for limestone caves. This migration brings them into direct conflict with humans.
+
+---
+
+## 2. 🚨 The Need for Colony Monitoring
+
+The conflict between rapid urban development and *Apis dorsata* is driven by a **lack of visibility**.
+
+*   **The Status Quo:** Communities react with panic only *after* a stinging incident.
+*   **The Consequence:** Unscientific "pest control" (fire/chemicals) is used. This kills thousands of pollinators, destroys brood, and contaminates honey.
+*   **The Void:** There is currently **zero technology** for non-invasive, remote monitoring of wild, open-nesting bees.
+
+---
+
+## 3. 🔬 Research Topics
+
+### A. Types of Bees in India
+To build a solution, we first distinguished our target from other species:
+
+| Species | Type | Nesting Style | Urban Status |
+| :--- | :--- | :--- | :--- |
+| **Apis dorsata** | **Wild** | **Open, Single Massive Comb** | **High Conflict (The Target)** |
+| *Apis cerana* | Domesticated | Cavities / Boxes | Managed |
+| *Apis florea* | Wild | Tiny Single Comb (Bushes) | Low Risk |
+| *Tetragonula* | Wild | Crevices (Stingless) | No Risk |
+
+### B. Rock Bee Habitat & Colony Patterns
+*   **Open-Air Architecture:** They require clear flight paths and build nests up to 1.5m wide.
+*   **Philopatry (The Return):** Colonies are migratory but exhibit **site fidelity**, returning to the *exact same balcony* year after year, guided by pheromone traces.
+*   **Defense "Curtain":** A living blanket of bees covers the comb. They use a visual **"Shimmering"** wave to warn off predators.
+
+### C. Risks to Communities
+*   **Mass Stinging:** Unlike other bees, *Apis dorsata* attacks in swarms. Multiple stings can cause anaphylactic shock or renal failure.
+*   **Hygiene:** Bee feces and leaking honey damage property.
+*   **Panic:** The psychological "fear factor" leads to expensive and destructive removal costs.
+
+### D. Existing Detection Methods & Gaps
+> *Current solutions fail because they are designed for boxes, not balconies.*
+
+*   ❌ **Beekeeping Apps:** Only work for managed hives.
+*   ❌ **Acoustic Sensors:** Require placement *inside* the hive (impossible for wild bees).
+*   ❌ **Drone Surveillance:** Noisy rotors trigger attacks.
+
+---
+
+## 4. 🧩 Problem Breakdown
+
+We deconstructed the problem into three actionable technological challenges:
+
+1.  **DETECTION (The "Finder"):** How do we verify a hive is *Apis dorsata* from 20 meters away *without* getting close?
+    *   *Solution:* **Computer Vision (YOLOv8)**
+2.  **LOCATION (The "Tracker"):** How do we predict where they will nest next season?
+    *   *Solution:* **Geo-Spatial "Hive Atlas" & Crowdsourcing**
+3.  **SAFETY (The "Guardian"):** How do we know if they are about to attack?
+    *   *Solution:* **Ethological Analysis (Shimmering & Hissing detection)**
+
+---
+
+## 5. 💡 The Solution: DorsataSentry
+
+**DorsataSentry** is a Flutter-based mobile application that turns a standard smartphone into a remote **bio-sensor**.
+
 <div align="center">
-<sub>Built for the Rock Bees Colony Hackathon (Stage 1)</sub>
+
+### 🔭 Module 1: HiveScout (Optical Detection)
+**Tech:** YOLOv8 (TensorFlow Lite)
+
+Instantly validates if a dark patch on a building is a Rock Bee colony, differentiating it from wasp nests or AC units.
+
+---
+
+### 🗺️ Module 2: Migratory Map (Geo-Spatial)
+**Tech:** Firebase GeoFirestore
+
+Tracks "Active" vs. "Dormant" sites. Uses historical data to send **Philopatry Alerts** to residents *before* migration season begins.
+
+---
+
+### 💓 Module 3: BioSense (Safety Analysis)
+**Tech:** OpenCV (Optical Flow) + Audio FFT
+
+*   **Visual Safety:** Detects "Shimmering"—the rhythmic defense wave (**0.3–0.8 m/s**) that signals agitation.
+*   **Audio Safety:** Detects the specific "Hissing" frequency (**400Hz–6kHz**) that precedes a mass attack.
+
+</div>
+
+---
+
+## 📊 System Architecture
+
+```mermaid
+graph TD
+    User[📱 User / "Urban Ecologist"] -->|Points Camera| Detect[🔭 HiveScout: Detection]
+    Detect -->|YOLOv8 Identification| ID{Is it Apis dorsata?}
+    ID -->|No / Wasp| Alert[🚫 Warning: Pest]
+    ID -->|Yes| Locate[🗺️ Migratory Map: Localization]
+    
+    Locate -->|GPS + History| Map[📍 Pin on Atlas]
+    Locate -->|Check Season| Philopatry[🔄 Philopatry Alert]
+    
+    Map -->|Analyze Video| Monitor[💓 BioSense: Safety]
+    Monitor -->|Eulerian Mag + Optical Flow| Shimmer[🌊 Detect Shimmering]
+    
+    Shimmer -->|Calculate Agitation| Safety{Risk Level}
+    Safety -->|Low| Safe[🟢 Safe / Dormant]
+    Safety -->|Med| Caution[🟡 Caution / Local Wave]
+    Safety -->|High| Danger[🔴 DANGER / Mass Attack]
+```
+
+---
+
+## 📚 References
+
+1.  **Wardhe, D.S. & Ghonmode, S.V. (2024).** *Nesting pattern of Apis dorsata F. in urban Nagpur.* Entomon, 49(4): 539-544.
+2.  **Oldroyd, B.P., et al. (2000).** *Colony aggregation and seasonal migration in Apis dorsata.*
+3.  **Kastberger, G., et al. (2008).** *Social waves in giant honeybees repel wasps.* PLOS ONE.
+4.  **Wehmann, H., et al. (2015).** *The Sound and the Fury—Bees Hiss when Expecting Danger.* PLOS ONE.
+5.  **Shaw, J.A., et al. (2005).** *Polarization lidar for detection of honey bees.* Optics Express.
+
+---
+
+<div align="center">
+
+**🏆 Built for Hackathon 2025**
+
+*Promoting Urban Biodiversity through AI* 🌿
+
 </div>
