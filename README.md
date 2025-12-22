@@ -116,21 +116,21 @@ Tracks "Active" vs. "Dormant" sites. Uses historical data to send **Philopatry A
 
 ```mermaid
 graph TD
-    User[📱 User / "Urban Ecologist"] -->|Points Camera| Detect[🔭 HiveScout: Detection]
-    Detect -->|YOLOv8 Identification| ID{Is it Apis dorsata?}
-    ID -->|No / Wasp| Alert[🚫 Warning: Pest]
-    ID -->|Yes| Locate[🗺️ Migratory Map: Localization]
+    User["📱 User / 'Urban Ecologist'"] -->|Points Camera| Detect["🔭 HiveScout: Detection"]
+    Detect -->|YOLOv8 Identification| ID{"Is it Apis dorsata?"}
+    ID -->|No / Wasp| Alert["🚫 Warning: Pest"]
+    ID -->|Yes| Locate["🗺️ Migratory Map: Localization"]
     
-    Locate -->|GPS + History| Map[📍 Pin on Atlas]
-    Locate -->|Check Season| Philopatry[🔄 Philopatry Alert]
+    Locate -->|GPS + History| Map["📍 Pin on Atlas"]
+    Locate -->|Check Season| Philopatry["🔄 Philopatry Alert"]
     
-    Map -->|Analyze Video| Monitor[💓 BioSense: Safety]
-    Monitor -->|Eulerian Mag + Optical Flow| Shimmer[🌊 Detect Shimmering]
+    Map -->|Analyze Video| Monitor["💓 BioSense: Safety"]
+    Monitor -->|Eulerian Mag + Optical Flow| Shimmer["🌊 Detect Shimmering"]
     
-    Shimmer -->|Calculate Agitation| Safety{Risk Level}
-    Safety -->|Low| Safe[🟢 Safe / Dormant]
-    Safety -->|Med| Caution[🟡 Caution / Local Wave]
-    Safety -->|High| Danger[🔴 DANGER / Mass Attack]
+    Shimmer -->|Calculate Agitation| Safety{"Risk Level"}
+    Safety -->|Low| Safe["🟢 Safe / Dormant"]
+    Safety -->|Med| Caution["🟡 Caution / Local Wave"]
+    Safety -->|High| Danger["🔴 DANGER / Mass Attack"]
 ```
 
 ---
