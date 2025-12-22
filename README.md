@@ -1,218 +1,138 @@
 <div align="center">
 
-![Stratum Banner](C:/Users/Darshankumar/.gemini/antigravity/brain/f391df9d-0188-4eb1-b3b7-78969c3ca43c/stratum_banner_1766391162189.png)
+![DorsataSentry Banner](C:/Users/Darshankumar/.gemini/antigravity/brain/f391df9d-0188-4eb1-b3b7-78969c3ca43c/dorsata_sentry_banner_1766392720848.png)
 
-# 🌟 Stratum - AI-Powered Skin Disease Detection
+# 🐝 DorsataSentry
 
-### *Your Intelligent Dermatology Companion* 🏥✨
+### *Predictive Coexistence Engine for Urban Ecology* 🏙️
 
-[![Made with Python](https://img.shields.io/badge/Made%20with-Python-blue?style=for-the-badge&logo=python)](https://www.python.org/)
-[![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
-[![AI Powered](https://img.shields.io/badge/AI-Powered-purple?style=for-the-badge&logo=brain&logoColor=white)](https://github.com)
-[![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)](https://github.com)
+[![Made with Flutter](https://img.shields.io/badge/Made%20with-Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev/)
+[![TensorFlow Lite](https://img.shields.io/badge/TF%20Lite-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://www.tensorflow.org/lite)
+[![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)](https://opencv.org/)
+[![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)](https://firebase.google.com/)
 
 </div>
 
 ---
 
-## 📖 About The Project
+## 📖 Executive Summary
 
-**Stratum** is a cutting-edge web application that harnesses the power of artificial intelligence to revolutionize skin disease detection and dermatological care. Built by the **Mavericks** team for the **RockBees Hackathon**, this platform provides instant, accurate skin condition analysis and connects users with nearby dermatology clinics.
+**DorsataSentry** is a mobile-first platform designed to solve the "Invisibility of Intent" conflict between urban development and the Giant Rock Bee (*Apis dorsata*). 
 
-### 🎯 Mission
+Current urban management treats all bee colonies as immediate threats because residents cannot distinguish between a calm hive and an agitated one. **DorsataSentry** transforms the user from a passive victim into an active **"Urban Ecologist"** by using advanced AI and "Visual Vibrometry" to detect, map, and monitor the behavioral state of colonies in real-time.
 
-To make professional dermatological insights accessible to everyone, anywhere, anytime through advanced AI technology.
+### 🎯 Core Innovation: The "Dorsata-Pulse"
+
+We move beyond simple detection to **Behavioral State Estimation**, using Eulerian Video Magnification (EVM) to detect the colony's "shimmering" defense signals before an attack occurs.
 
 ---
 
-## ✨ Key Features
+## 🧬 Biological Foundation (The "Why")
+
+Our solution is strictly grounded in the unique ethology of *Apis dorsata*, differentiating it from generic beekeeping apps.
+
+*   **🏙️ The "Urban Cliff" Hypothesis:** *Apis dorsata* uses high-rise buildings as substitutes for natural limestone cliffs, preferring specific orientations and overhangs.
+*   **🔄 Migratory Philopatry:** These bees exhibit strong site fidelity, returning to the *exact same anchor point* year after year. We use this to predict where "dormant" hives will reactivate in Oct-Nov.
+*   **🌊 The "Shimmering" Defense Signal:** When threatened, the colony performs a coordinated "Mexican Wave" of abdominal flipping. Our app detects this graded signal to warn users of imminent danger.
+
+---
+
+## ✨ Integrated Solution Architecture
+
+Our system operates on a hybrid **Edge-AI + Cloud GIS** architecture, integrating three critical layers:
 
 <div align="center">
 
-| 🤖 **AI Analysis** | 📍 **Clinic Finder** | 🔬 **Disease Detection** |
-|:------------------:|:--------------------:|:------------------------:|
-| Advanced ML model for instant skin analysis | Find dermatology clinics within 50km radius | Accurate detection of multiple skin conditions |
-| Real-time predictions | Location-based recommendations | Support for various skin types |
+| 🔭 **Module 1: Hive Scouter** | 🗺️ **Module 2: Hive Atlas** | 💓 **Module 3: Behavioral Sentinel** |
+|:----------------------------:|:---------------------------:|:------------------------------------:|
+| **Detection Layer** | **Location & Migration Layer** | **Safety Layer** |
+| On-device AI (YOLOv8) | 3D Urban Apiary Map | **"Dorsata-Pulse"** Visual Vibrometry |
+| Distinguishes bees vs. wasps | Tracks "Active" vs. "Dormant" hives | **Colony Agitation Index (CAI)** |
+| 🟢 Green Box: Correct ID | ⚠️ Migratory Alerts | 🟢 Safe \| 🟡 Caution \| 🔴 Danger |
 
 </div>
 
-### 🩺 Supported Conditions
-
-Our AI model can detect and analyze:
-
-- 🔴 **Acne** - Advanced acne detection and severity assessment
-- 💧 **Oily Skin** - Identifies excess sebum production
-- 🏜️ **Dry Skin** - Detects skin dehydration and dryness
-- 🌡️ **Other Dermatological Conditions** - Expanding detection capabilities
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-
-Make sure you have the following installed:
-
-- 🐍 **Python 3.8+**
-- 📦 **pip** (Python package manager)
-- 🌐 **Modern Web Browser**
-
-### 📥 Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/DarshanKumarM8/Mavericks-RockBees-Hackathon-StageX.git
-
-# Navigate to project directory
-cd Mavericks-RockBees-Hackathon-StageX
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-### ▶️ Running the Application
-
-```bash
-# Start the Flask server
-python app.py
-
-# Access the application
-# Open your browser and navigate to: http://localhost:5000
-```
-
----
-
-## 💡 How It Works
+### 💡 How It Works
 
 ```mermaid
-graph LR
-    A[📸 Upload Image] --> B[🔄 Preprocessing]
-    B --> C[🧠 AI Model Analysis]
-    C --> D[📊 Results & Recommendations]
-    D --> E[📍 Find Nearby Clinics]
-    style A fill:#e1f5ff
-    style C fill:#ffe1f5
-    style E fill:#e1ffe1
+graph TD
+    User[📱 User / "Urban Ecologist"] -->|Points Camera| Detect[🔭 Module 1: Detection]
+    Detect -->|YOLOv8 Identification| ID{Is it Apis dorsata?}
+    ID -->|No / Wasp| Alert[🚫 Warning: Pest]
+    ID -->|Yes| Locate[🗺️ Module 2: Localization]
+    
+    Locate -->|GPS + Barometer| Map[📍 Pin on Hive Atlas]
+    Locate -->|Check History| Philopatry[🔄 Philopatry Check]
+    
+    Map -->|Analyze Video| Monitor[💓 Module 3: Sentinel]
+    Monitor -->|Eulerian Mag + Optical Flow| Shimmer[🌊 Detect Shimmering]
+    
+    Shimmer -->|Calculate CAI| Safety{Agitation Level}
+    Safety -->|Low < 20| Safe[🟢 Safe / Dormant]
+    Safety -->|Med 20-60| Caution[🟡 Caution / Local Wave]
+    Safety -->|High > 80| Danger[🔴 DANGER / Mass Attack]
+    
+    Philopatry -->|Season Start| Push[📲 Push Notification: Returning Swarm]
 ```
-
-1. **📤 Upload** - User uploads a clear image of the affected skin area
-2. **🔍 Analyze** - AI model processes and analyzes the image
-3. **📋 Results** - Receive instant predictions with confidence scores
-4. **🏥 Connect** - Find nearby dermatology clinics for professional consultation
 
 ---
 
 ## 🛠️ Technology Stack
 
-<div align="center">
+Designed for high performance on mobile devices with cloud synchronization.
 
-### Backend
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-
-### Frontend
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-### Tools & Services
-![Ngrok](https://img.shields.io/badge/Ngrok-1F1E37?style=for-the-badge&logo=ngrok&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-
-</div>
+| Component | Technology | Role |
+| :--- | :--- | :--- |
+| **Frontend** | ![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white) | Cross-platform (iOS/Android) UI |
+| **ML Engine** | ![TF Lite](https://img.shields.io/badge/TF_Lite-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) | Runs quantized **YOLOv8 Nano** for on-device detection |
+| **Vision** | ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white) | **Eulerian Video Magnification** & Optical Flow for Shimmer detection |
+| **Backend** | ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black) | **GeoFirestore** for clustering & Cloud Functions for alerts |
+| **Mapping** | ![Google Maps](https://img.shields.io/badge/Google_Maps-4285F4?style=flat-square&logo=google-maps&logoColor=white) | Visualizes the "Hive Atlas" with Green/Red markers |
 
 ---
 
-## 📸 Screenshots
+## 📊 Modules in Detail
 
-> *Screenshots showcase the sleek, modern interface and powerful features*
+### 1. The "Hive Scouter" (Detection)
+*   User points phone at a structure.
+*   **Green Box:** *Apis dorsata* (Confidence > 85%) - Validated.
+*   **Red Box:** *Vespa* (Hornet/Wasp) - Pest Warning.
+*   **Constraint:** Pins only drop after AI validation to prevent false reports.
 
-### 🏠 Home Dashboard
-Beautiful, intuitive interface designed for seamless user experience
+### 2. The "Hive Atlas" (Context)
+*   **Z-Axis Tracking:** Uses phone's barometer to log specific floor numbers.
+*   **Migratory Alert:** Because bees return to the same spot, the app warns residents: *"Migratory Season Started: Check your balcony for returning swarms."*
 
-### 🔬 Analysis Results
-Detailed predictions with visual feedback and confidence metrics
-
-### 📍 Clinic Finder
-Interactive map showing nearby dermatology clinics and hospitals
-
----
-
-## 🌐 Deployment
-
-### Using Ngrok Tunnel
-
-```bash
-# Run the tunnel script to expose localhost to the internet
-python tunnel.py
-
-# Share the generated public URL with anyone!
-```
+### 3. The "Behavioral Sentinel" (Safety)
+*   **Motion Magnification:** Amplifies micro-motions in the video feed.
+*   **Shimmer Classification:** Detects velocity (~0.3-0.5 m/s) of the "Mexican Wave".
+*   **Acoustic Validation:** Secondary check for broadband "hiss" (400Hz - 6kHz).
+*   **Output:**
+    *   🟢 **Green (CAI < 20):** Safe.
+    *   🟡 **Yellow (CAI 20-60):** Localized Shimmering. Caution.
+    *   🔴 **Red (CAI > 80):** **AGITATED - DO NOT APPROACH.**
 
 ---
 
-## 🎯 Roadmap
+## 🚀 Impact & Novelty
 
-- [x] ✅ Core AI model implementation
-- [x] ✅ Acne detection enhancement
-- [x] ✅ Clinic finder integration
-- [x] ✅ Responsive web interface
-- [ ] 🔄 Multi-language support
-- [ ] 🔄 Mobile app development
-- [ ] 🔄 Expanded disease database
-- [ ] 🔄 User authentication & history
+*   **Novelty:** Unlike apps that log "Presence" (e.g., iNaturalist), DorsataSentry logs **"Intent"**. The combination of Object Detection + Visual Vibrometry is a first-of-its-kind dual-layer approach.
+*   **Patent Potential:** *"Method for Remote Behavioral State Estimation of Open-Nesting Hymenoptera using Optical Flow Vibrometry"*
+*   **Scalability:** Software-only solution deployable on existing CCTV networks.
 
 ---
 
-## 👥 Team Mavericks
-
-Built with ❤️ by passionate developers committed to making healthcare accessible
-
-<div align="center">
-
-**🏆 RockBees Hackathon - StageX**
-
-</div>
-
----
-
-## 📝 License
-
-This project is part of the RockBees Hackathon initiative.
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! Feel free to:
-
-1. 🍴 Fork the repository
-2. 🌿 Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. 💾 Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. 📤 Push to the branch (`git push origin feature/AmazingFeature`)
-5. 🔃 Open a Pull Request
-
----
-
-## 📧 Contact & Support
-
-Got questions? Need help? Reach out!
-
-- 💬 Open an issue on GitHub
-- 📧 Email the team
-- 🌟 Star this repo if you find it useful!
+## 📚 Key References
+1.  **Oldroyd, B. P., & Wongsiri, S. (2006).** *Asian Honey Bees: Biology, Conservation, and Human Interactions.*
+2.  **Kastberger, G., et al. (2008).** *"Social waves in giant honeybees repel wasps."* PLoS ONE.
+3.  **Wu, H. Y., et al. (2012).** *"Eulerian Video Magnification for Revealing Subtle Changes in the World."* ACM Transactions on Graphics.
 
 ---
 
 <div align="center">
 
-### 🌟 Star this repository if you found it helpful! 🌟
+**🏆 RockBees Hackathon - StageX - Team Mavericks**
 
-**Made with 💜 and lots of ☕**
-
----
-
-*Empowering better skin health through AI* 🚀
+*Transforming Urban Conflict into Coexistence*
 
 </div>
