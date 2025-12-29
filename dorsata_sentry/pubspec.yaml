@@ -45,6 +45,7 @@ dependencies:
   google_maps_flutter: ^2.5.0
   geoflutterfire_plus: ^0.0.8
   cloud_firestore: ^4.15.5
+  image: ^4.7.2
 
 dev_dependencies:
   flutter_test:
